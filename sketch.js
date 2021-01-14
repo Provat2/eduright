@@ -393,7 +393,7 @@ function createhouse(){
                     break;
             default: break;
         }
-        house.velocityX = -5;  
+        house.velocityX = -7;  
         house.lifetime = 350;
 	house.depth = 0; 
 	houseGroup.add(house);
@@ -406,7 +406,7 @@ function createObstacle(){
         obstacle1 = createSprite(displayWidth+15, displayHeight-250, 10, 10);
         obstacle1.addImage(obstacleImage1);
         obstacle1.scale = 0.04;
-        obstacle1.velocityX = -5;
+        obstacle1.velocityX = -7;
         obstacle1.depth = 2;
         obstacle1.setCollider("rectangle", 0, 0, obstacle1.width, obstacle1.height);
         obstacle1.debug = true;
@@ -427,7 +427,7 @@ function children(){
         student.depth = obstacle1.depth;
         student.depth += 1;
         student.depth = 2;
-        student.velocityX = -5;
+        student.velocityX = -7;
         studentGroup.add(student);
     }
     return student;
