@@ -393,7 +393,7 @@ function createhouse(){
                     break;
             default: break;
         }
-        house.velocityX = -7;  
+        house.velocityX = -9;  
         house.lifetime = 350;
 	house.depth = 0; 
 	houseGroup.add(house);
@@ -402,11 +402,11 @@ function createhouse(){
 }
 
 function createObstacle(){
-    if (frameCount % 119 === 0){
+    if (frameCount % 69 === 0){
         obstacle1 = createSprite(displayWidth+15, displayHeight-250, 10, 10);
         obstacle1.addImage(obstacleImage1);
         obstacle1.scale = 0.04;
-        obstacle1.velocityX = -7;
+        obstacle1.velocityX = -9;
         obstacle1.depth = 2;
         obstacle1.setCollider("rectangle", 0, 0, obstacle1.width, obstacle1.height);
         obstacle1.debug = true;
@@ -427,7 +427,7 @@ function children(){
         student.depth = obstacle1.depth;
         student.depth += 1;
         student.depth = 2;
-        student.velocityX = -7;
+        student.velocityX = -9;
         studentGroup.add(student);
     }
     return student;
@@ -480,14 +480,3 @@ function createObstacle2(){
     }
     return obstacle2;
 }
-
-
-
-
-/*
-var delayInMilliseconds = 1000; 
-setTimeout(function() { 
-    //your code to be executed after 1 second 
-}, delayInMilliseconds
-);
-*/
